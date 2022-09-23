@@ -1,0 +1,199 @@
+@font-face{
+    font-family: guilherme;
+    src: url(../fontes/roboto/roboto-thin.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*BARRA DE ROLAGEM------------------------------------------------------------------*/
+body{
+    font-family: guilherme, Arial, sans-serif;
+	background-color: #1C1C1C;
+}
+body::-webkit-scrollbar{
+  width: 9px;
+}
+body::-webkit-scrollbar-track{
+  background: rgba(0,0,0,0.1);
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #1E90FF;
+  border-radius: 20px;
+  border: 2px solid gray;
+}
+/*CABEÇA DA PÁGINA------------------------------------------------------------------*/
+header{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+	position: fixed;
+	top:0;
+}
+header div img{
+    height: 6vh;
+}
+#menu{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#menu ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+#menu li{
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #1E90FF;
+    vertical-align: middle;
+}
+#menu li a{
+    text-decoration: none;
+    display: flex;
+    color: #1E90FF;
+    align-items: center;
+}
+#carrinho{
+    margin-right: 10px;
+}
+#menu a:hover{
+    transform: scale(1.2);
+}
+
+/*CONTEÚDO DA PÁGINA----------------------------------------------------------------*/
+main{
+    background-color: #363636;
+    height: 100%;
+	margin-top:10vh;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contato{
+    width: 55vh;
+    height: 80vh;
+    padding: 2%;
+    background-color: #2E2E2E;
+    border: 3px solid rgb(14, 13, 13);
+    border-radius: 2%;
+    box-shadow: 0 0 20px black;
+}
+#contato h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 0px 0px 30px black;
+}
+#primeiro{
+    width: 100%;
+    min-height: 50%;
+}
+#segundo{
+    width: 100%;
+    position: relative;
+    top: 13%;
+}
+#botao button{
+    background: darkgrey;
+    color: white;
+    border-style: outset;
+    border-color: gray;
+    width: 150px;
+    height: 45px;
+    font: guilherme, Arial, sans-serif;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+.cordefundo{
+    background-color: #696969;
+}
+#contato fieldset{
+    border: none;
+}
+.spaco{
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+#logonocontato img{
+    width: 100%;
+    height: 100%;
+}
+
+/*RODAPÉ DA PÁGINA-------------------------------------------------------------------*/
+footer{
+    background-color: #2E2E2E;
+    padding: 5rem;
+}
+#rodape{
+    width: 100%;
+    display: flex;
+    margin-bottom: 1.5rem;
+    justify-content: space-around;
+}
+.blocos123{
+    width: 20%;
+    height: 20vh;
+}
+#rodapesocial{
+    display: flex;
+    justify-content: start;
+}
+.blocos123 h3{
+    margin-bottom: 2vh;
+    color: white;
+}
+.socialicone{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 5px;
+}
+.socialicone img{
+    width: 100%;
+    height: 100%;
+}
+#rodapemenu{
+    display: flex;
+    flex-direction: column;
+}
+#rodapemenu a{
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: #1E90FF;
+}
+#rodapelogo{
+    text-align: center;
+}
+#rodapelogo figure{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#rodapelogo figcaption{
+    color: white;
+    font-size: 12px;
+}
+.partelogo{
+    width: 23%;
+    height: 10vh;
+    margin-bottom: 10px;
+}
+.partelogo img{
+    width: 100%;
+    height: 100%;
+}
+.partelogo img{
+    width: 100%;
+    height: 100%;
+}
+#rodapesobre p{
+    margin-bottom: 0.5rem;
+    color: #1E90FF;
+}

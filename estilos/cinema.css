@@ -1,0 +1,331 @@
+@font-face{
+    font-family: guilherme;
+    src: url(../fontes/roboto/roboto-thin.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*BARRA DE ROLAGEM------------------------------------------------------------------*/
+body{
+    font-family: guilherme, Arial, sans-serif;
+	background-color: #1C1C1C;
+}
+body::-webkit-scrollbar{
+  width: 9px;
+}
+body::-webkit-scrollbar-track{
+  background: rgba(0,0,0,0.1);
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #1E90FF;
+  border-radius: 20px;
+  border: 2px solid gray;
+}
+/*CABEÇA DA PÁGINA------------------------------------------------------------------*/
+header{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+	position: fixed;
+	top:0;
+    z-index: 1;
+}
+header div img{
+    height: 6vh;
+}
+#menu{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#menu ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+#menu li{
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #1E90FF;
+    vertical-align: middle;
+}
+#menu li a{
+    text-decoration: none;
+    display: flex;
+    color: #1E90FF;
+    align-items: center;
+}
+#carrinho{
+    margin-right: 10px;
+}
+#menu a:hover{
+    transform: scale(1.2);
+}
+
+/*CONTEÚDO DA PÁGINA----------------------------------------------------------------*/
+main{
+    width: 100%;
+    height: 100%;
+    padding: 3rem 0 0;
+    background-color: #363636;
+	margin-top:10vh;
+}
+#blococinema{/*Bloco principal do cinema----------------------------------------------*/
+    width: 100%;
+    margin-bottom: 5rem;
+}
+#tela{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+#tela2{
+    width: 70%;
+    height: 70vh;
+    position: relative;
+    box-shadow: 0 0 20px black;
+}
+#tela2 img{
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgba(0, 0, 0, 0.568);
+}
+#subtopicos{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: space-evenly;
+}
+.blocos{
+    width: 23%;
+    height: 30vh;
+    border: 3px solid rgba(0, 0, 0, 0.568);
+    position: relative;
+    box-shadow: 0 0 20px black;
+}
+.tamanhoimagem{
+    width: 100%;
+    height: 100%;
+}
+
+#ingresso{/*Ingresso------------------------------------------------------------------------*/
+    width: 60%;
+    margin: 0 auto 5rem;
+    padding: 2rem 0;
+}
+#ingresso h1{
+    color: white;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+#blocoingresso{
+    width: 100%;
+    display: flex;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.432);
+}
+.ingresso1{
+    width: 80%;
+    min-height: 25vh;
+    padding: 1rem;
+    background-color: #FFF;
+}
+.ingresso2{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 13px;
+    padding: 1rem;
+}
+.parteimg{
+    width: 20%;
+    min-height: 25vh;
+    border-left: 2px dashed #000;
+    background-color: #FFF;
+    background-image: url(../imagens/cinema/codigo_de_barra-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+}
+.spaco{
+    margin-bottom: 1rem;
+}
+.semborda{
+    border: none;
+}
+
+#poltronas{/*Poltronas----------------------------------------------------------------------*/
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.368);
+    padding: 2rem 0;
+    margin-bottom: 5rem;
+    box-shadow: 0 0 20px black;
+}
+#poltrona{
+    display: flex;
+    justify-content: space-around;
+}
+.polt{
+    width: 30%;
+    height: 30vh;
+    position: relative;
+    cursor: pointer;
+}
+.polt img{
+    width: 100%;
+    height: 100%;
+}
+
+#alimentos{/*Alimentos---------------------------------------------------------------*/
+    width: 100%;
+    margin-bottom: 5rem;
+    padding: 2rem 0;
+    background-color: rgba(0, 0, 0, 0.368);
+    box-shadow: 0 0 20px black;
+}
+#combos{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.combos1{
+    width: 21%;
+    height: 40vh;
+    cursor: pointer;
+}
+.combos1 img{
+    width: 100%;
+    height: 100%;
+}
+
+#sessao3d{/*Salas3D------------------------------------------------------------------*/
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.368);
+    padding: 2rem 0;
+    margin-bottom: 5rem;
+    box-shadow: 0 0 20px black;
+}
+#salas3d{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.salas{
+    width: 47%;
+    position: relative;
+    cursor: pointer;
+}
+.salas img{
+    width: 100%;
+    height: 100%;
+}
+
+iframe{/*Mapa------------------------------------------------------------------------*/
+    width: 100%;
+}
+
+.legenda{/*Legenda-------------------------------------------------------------------*/
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    color: white;
+    text-shadow: 0 0 8px black;
+}
+
+.titulos{/*Titulos-------------------------------------------------------------------*/
+    color: white;
+    margin: 0 2rem 2rem;
+}
+
+.propaganda{/*Porpaganda-------------------------------------------------------------*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+}
+.pro{
+    width: 40%;
+    height: 100%;
+}
+.pro img{
+    width: 100%;
+    height: 100%;
+    max-height: 30vh;
+}
+
+/*RODAPÉ DA PÁGINA-------------------------------------------------------------------*/
+footer{
+    background-color: #2E2E2E;
+    padding: 5rem;
+}
+#rodape{
+    width: 100%;
+    display: flex;
+    margin-bottom: 1.5rem;
+    justify-content: space-around;
+}
+.blocos123{
+    width: 20%;
+    height: 20vh;
+}
+#rodapesocial{
+    display: flex;
+    justify-content: start;
+}
+.blocos123 h3{
+    margin-bottom: 2vh;
+    color: white;
+}
+.socialicone{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 5px;
+}
+.socialicone img{
+    width: 100%;
+    height: 100%;
+}
+#rodapemenu{
+    display: flex;
+    flex-direction: column;
+}
+#rodapemenu a{
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: #1E90FF;
+}
+#rodapelogo{
+    text-align: center;
+}
+#rodapelogo figure{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#rodapelogo figcaption{
+    color: white;
+    font-size: 12px;
+}
+.partelogo{
+    width: 23%;
+    height: 10vh;
+    margin-bottom: 10px;
+}
+.partelogo img{
+    width: 100%;
+    height: 100%;
+}
+.partelogo img{
+    width: 100%;
+    height: 100%;
+}
+#rodapesobre p{
+    margin-bottom: 0.5rem;
+    color: #1E90FF;
+}
